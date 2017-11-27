@@ -5,11 +5,11 @@ baseurl: '/cv' #change it according to your repository name
 
 
 # Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
-#style: styles-2
-#style: styles-3
-#style: styles-4
-#style: styles-5
-#style: styles-6
+# style: styles-2
+# style: styles-3
+style: styles-4
+# style: styles-5
+# style: styles-6
 
 
 #Profile information
@@ -19,10 +19,10 @@ pic: profile.png  #place a 100x100 picture inside /assets/images/ folder and pro
 
 #sidebar links
 email: derek.mortimer@me.com
-phone: +44 07515 353 444
-website: pyoio.github.io #do not add http://
+phone: 07515 353 444
+# website: pyoio.github.io
 linkedin: derekmortimer
 github: pyoio
-twitter: '@derekmortimer'
+twitter: derekmortimer
 
 #Update all the sections by editing the files inside _includes folder.
