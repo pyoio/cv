@@ -1,7 +1,7 @@
 
 title: Resume - Derek Mortimer
-url: 'https://pyoio.github.com'
-baseurl: '/cv' #change it according to your repository name
+url: 'https://cv.pyo.io'
+baseurl: '' #change it according to your repository name
 
 
 # Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
@@ -14,7 +14,7 @@ style: styles-4
 
 #Profile information
 name: Derek Mortimer
-tagline: Principal Engineer
+tagline: Problem Solver
 pic: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
 #sidebar links
