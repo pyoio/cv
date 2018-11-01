@@ -1,33 +1,54 @@
 <section class="section experiences-section">
     <h2 class="section-title"><i class="fa fa-briefcase"></i>Experience</h2>
-    
+
+    <div class="item">
+        <div class="meta">
+            <div class="upper-row">
+                <h3 class="job-title">Site Reliability Engineer</h3>
+                <div class="time">2017 - Current</div>
+            </div><!--//upper-row-->
+            <div class="company">BuzzFeed, London &amp; New York</div>
+        </div><!--//meta-->
+        <div class="details">
+            <p>Site Reliability Engineer at BuzzFeed, helping bolster the teams SRE (Software Engineering) skill set. Owning and developing the internal platform as a service to match the growing needs of the rest of BuzzFeed tech.</p>
+
+            <p>The platform is primarily hosted in AWS, using DataDog for logging/metrics. We make use of all the usual suspects in AWS: ECS/ECR, Lambda, S3, RDS. Architecture is captured and deployed using Terraform. More recently we have been using GCP's BigQuery and managed ML offerings to assist Data Science and other teams using ML (e.g, recommendations).</p>
+
+            <p>Most recently I did work to automate the creation of the platform and its clusters from scratch, and improved isolation within the code and architecture to allow these new clusters to be constructed in separate AWS accounts. This helped us avoid AWS API limits, improving security (by reducing blast radius) and increased the speed and resilience of the CI pipeline for the platform as a result of automating away the manual aspects and improving tests.</p>
+
+            <p>Prior to that I led SRE's first engagement exercise with tech-as-a-whole, to test that we understood their current and future needs. We did this by creating personas for the use cases we knew about, and creating a set of hypotheses about their current workflows. With the personas in place we interviewed multiple people in each persona to collect targeted feedback. Using the feedback we collated a set of problem areas to tackle for some immediate wins in developer productivity, and some longer term goals that aligned with higher level business strategy (e.g., work to enable active-active multi-region).</p>
+
+            <p>Throughout my entire role I have been a vocal proponent of improving the automation and testing of all aspects of our internal platform (the underlying code itself, and the core services we provide within it). This has allowed us to speed up the feedback loop and gain increased confidence in the changes we make.</p>
+        </div><!--//details-->
+    </div><!--//item-->
+
     <div class="item">
         <div class="meta">
             <div class="upper-row">
                 <h3 class="job-title">Software Engineer</h3>
-                <div class="time">2016 - Present</div>
+                <div class="time">2016 - 2017</div>
             </div><!--//upper-row-->
             <div class="company">OVO Energy, London</div>
         </div><!--//meta-->
         <div class="details">
             <p>Engineer at OVO Energy leading development on the Live product, whose mission is to support the real-time collection of high granularity Energy usage data (thousands of distributed devices) and provide insights to customers and the rest of the business.</p>
-            
+
             <p>Core stack consists of Scala, Akka (streams, kafka, http) services, Kafka, Spark, InfluxDB, Cassandra, Grafana, Kapacitor, and AWS DynamoDB, S3, SQS, and SNS. All deployed into AWS, infrastructure captured in code and automation at all levels, fierce proponent of Agile, XP, DevOps, and TDD/BDD. All services deployed as containers using CloudFormation and AWS ECS/ECR.</p>
 
             <p>Beyond my team and product, I lead efforts to help teams effectively and quickly deliver cloud based architectures (applying DevOps principles), and lead the migration from a single shared AWS into multiple team specific AWS accounts educated teams on the use of container technologies. I was involved in the bootstrapping and proof of concept work around an internal data lake project, allowing multiple teams to easily stream their data and make it available for insight throughout the business, reducing turnaround times and increasing flexibility.</p>
-            
+
             <p>I led the creation of a squad across multiple teams to address cross-cutting concerns with the overall customer experience, leading to the identification of issues that didn’t fit within any single team’s remit, resulting in the creation of a team whose remit was holistic oversight of the customer experience, and improved feedback from customers.</p>
-            
+
             <p>Developed internal tooling (using Python and CloudFormation) to enable teams to quickly deploy their services into AWS using Docker (AWS ECS) facilitating the automated (and repeatable) creation and configuration of multiple environments.</p>
-            
+
             <p>Educated teams on the effective use of containerisation in a cloud environment, particularly on the use of containers to run JVM applications.</p>
-            
+
             <p>Drove efforts in all teams to capture existing services and infrastructure as code, providing disaster recovery likely to arise from multiple teams using a single shared AWS account, and making migration into multiple AWS accounts much smoother.</p>
-            
+
             <p>Collaborated to bootstrap internal data platform in Google Container Service, leveraging my experience with containerisation and automation to easily capitalise on the flexibility offered by Kubernetes.</p>
         </div><!--//details-->
     </div><!--//item-->
-    
+
     <div class="item">
         <div class="meta">
             <div class="upper-row">
@@ -57,13 +78,13 @@
         </div><!--//meta-->
         <div class="details">
                 <p>Worked under the Content Discovery team on feature development across Homepage and Search services (Java, Scala, Node.js). Spent a lot of time automating deployments and testing. Team norms were to use Cucumber for BDD which ran under Ruby, and language appropriate libraries for TDD (e.g., JUnit in Java).</p>
-                
+
                 <p>Began to introduce Docker and Vagrant into the projects to provide an automated mechanism for bootstrapping development environments which provided repeatable and portable deployments to improve testing, and also new team members to be on-boarded more effectively.</p>
-                
+
                 <p>Tools and techs: Java 6, Java 8, Scala, Node.js (0.10), Ruby, Cucumber, Python 2.7, Python 3, Spring, Spring Boot, Maven, Git, Subversion, GitHub, JIRA, Confluence. Kanban, Scrum (CSM), TDD, BDD</p>
         </div><!--//details-->
     </div><!--//item-->
-    
+
     <div class="item">
         <div class="meta">
             <div class="upper-row">
@@ -74,17 +95,17 @@
         </div><!--//meta-->
         <div class="details">
                 <p>Part of a research group within Newcastle University called the Digital Institute whose remit is to collaborate with industry and other academic units to provide consulting and development for varying projects in a wide range of disciplines.</p>
-                
+
                 <p>Main development focussed on a JavaEE based scientific workflow processing system supporting the generation and tracing of experimental data, allowing derivative experiment use to be tracked and audited.</p>
 
                 <p>Collaborative project with IBM on migrating psychological model evaluation from a desktop environment to a massively parallelised cloud environment (AWS), allowing them to effectively test tens of thousands of variations in seconds.</p>
-                
+
                 <p>In this role I developed communication skills through consulting responsibilities (e.g., requirements gathering and bridging communication gaps between technical and non-technical audiences) and meeting prospective collaborators.</p>
 
                 <p>Academic responsibilities including contributing and leading research papers, lecturing to undergrad and postgrad students, and mentoring.</p>
-                
+
                 <p>Techs used: Java, JavaEE, Angular, React, Scala, Groovy, Ruby, Python (SciPy), MySQL, Oracle, Postgres, Mongo, Node.js, GeoData, AWS.</p>
         </div><!--//details-->
     </div><!--//item-->
-    
+
 </section><!--//section-->
