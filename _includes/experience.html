@@ -12,13 +12,11 @@
         <div class="details">
             <p>Senior Site Reliability Engineer at BuzzFeed, helping bolster the SRE team's Software Engineering skill set. Owning and developing the internal platform as a service to match the growing needs of the rest of BuzzFeed tech and automating myself into more interesting problems.</p>
 
-            <p>The platform is primarily hosted in AWS, using DataDog for logging/metrics. We make use of all the usual suspects in AWS: ECS/ECR, Lambda, S3, RDS. Architecture is captured and deployed using Terraform. More recently we have been using GCP's BigQuery and managed ML offerings to assist Data Science and other teams using ML (e.g, recommendations).</p>
+            <p>The platform is primarily hosted in AWS, using DataDog for logging/metrics. We make use of all the usual suspects in AWS: ECS/ECR, Lambda, S3, RDS. Architecture is captured and deployed using Terraform. More recently we have been using GCP's BigQuery and managed ML offerings to assist Data Science and other teams using ML (e.g., recommendations).</p>
 
-            <p>Most recently I did work to automate the creation of the platform and its clusters from scratch, and improved isolation within the code and architecture to allow these new clusters to be constructed in separate AWS accounts. This helped us avoid AWS API limits, improving security and resilience (via isolation) and increased genereal development speed by automating away more manual aspects including testing.</p>
+            <p>Most recently I did work to automate the creation of the platform and its clusters from scratch, and improved isolation within the code and architecture to allow these new clusters to reside in separate AWS accounts. These changes helped us avoid AWS API limits, improved security and resilience (via isolation) and increased general development speed by automating away more manual aspects including testing.</p>
 
-            <p>Prior to that I led SRE's first engagement exercise with tech-as-a-whole, to test that we understood their current and future needs. We did this by creating multiple personas and hypotheses and interviewed multiple people in each persona to collect targeted feedback. Using the feedback we collated a set of problem areas to tackle for some immediate wins in developer productivity/pain, and some longer term goals that aligned with higher level business strategy (e.g., work to enable active-active multi-region).</p>
-
-            <p>Throughout my entire role I have been a vocal proponent of improving the automation and testing of all aspects of our internal platform (the underlying code itself, and the core services we provide within it). This has allowed us to speed up the feedback loop and gain increased confidence in the changes we make.</p>
+            <p>Before that, I led SRE's first engagement exercise with tech-as-a-whole, to test that we understood their current and future needs. We did this by creating personas and hypotheses representing various use cases and interviewing multiple people in each persona to collect targeted feedback. Using the input, we collated a set of problem areas to tackle for some quick wins in developer productivity/pain, and some longer-term goals that aligned with higher level business strategy (e.g., work to enable active-active multi-region).</p>
         </div><!--//details-->
     </div><!--//item-->
 
@@ -33,15 +31,15 @@
         <div class="details">
             <p>Lead development on the Live product, whose mission is to support the real-time collection of high granularity Energy usage data (thousands of distributed devices reporting every few seconds) and provide insights to customers and the rest of the business.</p>
 
-            <p>Core stack of Scala, Akka (streams, kafka, http) services, Kafka, Spark, InfluxDB, Cassandra, Grafana, Kapacitor, and AWS DynamoDB, S3, SQS, and SNS. All deployed into AWS as containerised apps, all infrastructure captured using CloudFormation.</p>
+            <p>Core stack of Scala, Akka (streams, Kafka, HTTP) services, Kafka, Spark, InfluxDB, Cassandra, Grafana, Kapacitor, and AWS DynamoDB, S3, SQS, and SNS. All deployed into AWS as containerised apps, all infrastructure captured using CloudFormation.</p>
 
-            <p>Helped teams migrate into their own AWS accounts and automate provisioning of infrastructure using TerraForm and AWS CloudFormation. I also led workshops on effective operation of containerised JVM applications in a multi-tenant computing scenarios.</p>
+            <p>Helped teams migrate into individual AWS accounts and automate the provisioning of infrastructure using TerraForm and AWS CloudFormation. I also led workshops on the effective operation of containerised JVM applications in multi-tenant computing scenarios.</p>
 
-            <p>Bootstrapped proof of concept work around an internal data lake, supporting the real time ingestion of Kafka events (with Avro schemas) into BigQuery for use by other development teams, data science and business insight.</p>
+            <p>Bootstrapped proof of concept work around an internal data lake, supporting the real-time ingestion of Kafka events (with Avro schemas) into BigQuery for use by other development teams, data science and business insight.</p>
 
-            <p>Involved in the creation of a squad across multiple teams to address concerns with the overall customer experience, ultimately resulting in the creation of a new team whose remit was holistic oversight of the customer experience, and improved feedback from customers.</p>
+            <p>Involved in the formulation of a squad across multiple teams to address concerns with the overall customer experience, ultimately resulting in the creation of a new team whose remit was holistic oversight of the customer experience, and improved feedback from customers.</p>
 
-            <p>Collaborated to bootstrap internal data platform in Google Container Service, leveraging my experience with containerisation and automation to easily capitalise on the flexibility offered by Kubernetes.</p>
+            <p>Collaborated to bootstrap internal data platform in Google Container Service, leveraging my experience with containerisation and automation to capitalise on the flexibility offered by Kubernetes easily.</p>
         </div><!--//details-->
     </div><!--//item-->
 
@@ -54,13 +52,13 @@
             <div class="company">BBC, MediaCityUK</div>
         </div><!--//meta-->
         <div class="details">
-                <p>Working under the Content Discovery group supporting the BBC Homepage, site wide navigation, and BBC Online Search APIs (used by every BBC site/app including iPlayer Video/Radio).</p>
+            <p>Working under the Content Discovery group supporting the BBC Homepage, site-wide navigation, and BBC Online Search APIs (used by every BBC site/app including iPlayer Video/Radio).</p>
 
-                <p>Lead on technology choices and implementation of a complete migration of the Search systems from an in house commercial platform to an open source solution (Apache Solr) hosted in AWS. We worked closely with AWS to adopt best practices for architecting scalable and resilient systems in the cloud.</p>
+            <p>Lead on technology choices and implementation of a complete migration of the Search systems from an in-house commercial platform to an open source solution (Apache Solr) hosted in AWS. We worked closely with AWS to adopt best practices for architecting scalable and resilient systems in the cloud.</p>
 
-                <p>Implemented a new AWS based pipeline for ingesting and indexing content from production and editorial teams around the BBC. Implemented using serverless principles (AWS lambda), providing great scalability and cost management. This pipeline allows  new sources and destinations to be added with ease, and without any interruption of service. We worked with AWS to adopt best CD practices for use of AWS lambda and I also created a dockerised test harness for us to test the lambda locally.</p>
+            <p>Created a new AWS based pipeline for ingesting and indexing content from production and editorial teams around the BBC. Implemented using serverless principles (AWS lambda), providing high scalability and cost management. This pipeline allows new sources and destinations to be added with ease, and without any interruption of service. We worked with AWS to adopt best CD practices for the use of AWS lambda, and I also created a dockerised test harness for us to test the lambda locally.</p>
 
-                <p>As a 10% R&D project I collaborated to roll out a "toolshed" project which allowed us to rapidly develop prototypes in Docker containers and deploy them into the toolshed to be evaluated, or used where needed (e.g., dashboards, prototype tools). I also worked across multiple projects to provide a Python libraries to help us create repeatable and portable deployment pipelines, and promoted the use of Jenkins pipelines.</p>
+            <p>As a 10% R&D project I collaborated to roll out a "toolshed" project which allowed us to rapidly develop prototypes in Docker containers and deploy them into the toolshed for evaluation, or other use cases (e.g., dashboards, prototype tools). I also worked across multiple projects to provide a Python library to help us create repeatable and portable deployment pipelines, and promoted the use of Jenkins pipelines.</p>
         </div><!--//details-->
     </div><!--//item-->
 
