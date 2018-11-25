@@ -1,6 +1,10 @@
 <div class="languages-container container-block">
 <h2 class="container-block-title">Availability</h2>
 <ul class="list-unstyled interests-list">
-<li>Contact Me</li>
+    {% if site.email %}
+    <li class="email"><i class="fa fa-envelope"></i><a href="mailto: {{site.email}}"> Contact Me</a></li>
+    {% else %}
+    <li>Contact Me</li>
+    {% endif %}
 </ul>
 </div><!--//interests-->
