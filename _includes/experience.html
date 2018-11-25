@@ -10,38 +10,55 @@
             <div class="company">BuzzFeed, London &amp; New York</div>
         </div><!--//meta-->
         <div class="details">
-            <p>Senior Site Reliability Engineer at BuzzFeed, helping bolster the SRE team's Software Engineering skill set. Owning and developing the internal platform as a service to match the growing needs of the rest of BuzzFeed tech and automating myself into more interesting problems.</p>
+            <p>Senior Site Reliability Engineer at BuzzFeed (Infrastructure/Resilience squad), bolstering the SRE team's Software Engineering skill set. Owning and developing the AWS and GCP based internal PaaS to match the growing needs of the rest of BuzzFeed tech and automating myself into more interesting problems.</p>
 
-            <p>The platform is primarily hosted in AWS, using DataDog for logging/metrics. We make use of all the usual suspects in AWS: ECS/ECR, Lambda, S3, RDS. Architecture is captured and deployed using Terraform. More recently we have been using GCP's BigQuery and managed ML offerings to assist Data Science and other teams using ML (e.g., recommendations).</p>
+            <h5>Projects</h5>
+            <ul class="project-list">
+                <li>Automated the assignment of cloud-provider IAM roles to individual microservices, improving security by locking down service access to data stores and paving the way for subsequent work around service-to-service identity.</li>
+                <li>Automated service-to-service authentication and authorization using a mechanism based on IAM identities (inspired by Vault's IAM auth implementation), allowing service owners to control fine grained application-level permissions between services.</li>
+                <li>Re-architected AWS side load balancing to make more efficient use of Application Load Balancers, improving deployment speeds, operational resilience and saving $13k per month.</li>
+                <li>Re-architected service migration allowing zero downtime transitions within the internal PaaS for a wider set of configuration changes.</li>
+                <li>Led a BuzzFeed tech-wide developer experience engagement exercise, testing a set of user personas and problem hypotheses to check we understood user needs, and collect targeted feedback about how to improve day-to-day development pain, and what long term capabilities we needed to target.</li>
+                <li>Automating multiple aspects of the Terraform setup of new instances of the PaaS for better disaster recovery, increased automation and improved testing.</li>
+                <li>Designed new architecture to improve cluster isolation within PaaS, allowing clusters to be more easily deployed across multiple AWS accounts.</li>
+            </ul>
 
-            <p>Most recently I did work to automate the creation of the platform and its clusters from scratch, and improved isolation within the code and architecture to allow these new clusters to reside in separate AWS accounts. These changes helped us avoid AWS API limits, improved security and resilience (via isolation) and increased general development speed by automating away more manual aspects including testing.</p>
-
-            <p>Before that, I led SRE's first engagement exercise with tech-as-a-whole, to test that we understood their current and future needs. We did this by creating personas and hypotheses representing various use cases and interviewing multiple people in each persona to collect targeted feedback. Using the input, we collated a set of problem areas to tackle for some quick wins in developer productivity/pain, and some longer-term goals that aligned with higher level business strategy (e.g., work to enable active-active multi-region).</p>
+            <h5>Tools &amp; Techs</h5>
+            <p>AWS and GCP (Compute, Storage, ML/DataSci and Infrastructure services), Docker/ECS(+FarGate)/GKE, DataDog, PaperTrail/DataDog Logs, CloudFormation/Terraform, Jenkins, Python (all PaaS tooling and frameworks), Go (API gateway and SSO services).</p>
         </div><!--//details-->
     </div><!--//item-->
+
+    <hr></hr>
 
     <div class="item">
         <div class="meta">
             <div class="upper-row">
-                <h3 class="job-title">Senior/Principal Software Engineer</h3>
+                <h3 class="job-title">Senior Software Engineer</h3>
                 <div class="time">2016 - 2017</div>
             </div><!--//upper-row-->
             <div class="company">OVO Energy, London</div>
         </div><!--//meta-->
         <div class="details">
-            <p>Lead development on the Live product, whose mission is to support the real-time collection of high granularity Energy usage data (thousands of distributed devices reporting every few seconds) and provide insights to customers and the rest of the business.</p>
+            <p>Senior and Acting-Principal developer on the OVO Live product, supporting the real-time collection of high granularity (10-second) Energy usage data (thousands of distributed devices reporting every few seconds) and provide insights to customers and the rest of the business. The team also covered the collection and insight into smart-meter data (30min and 1day granularity).</p>
 
-            <p>Core stack of Scala, Akka (streams, Kafka, HTTP) services, Kafka, Spark, InfluxDB, Cassandra, Grafana, Kapacitor, and AWS DynamoDB, S3, SQS, and SNS. All deployed into AWS as containerised apps, all infrastructure captured using CloudFormation.</p>
+            <h5>Projects</h5>
+            <ul class="project-list">
+                <li>Owned, operated and developed Kafka + Akka powered ingestion pipeline for storing real time energy consumption data (13k devices reporting gas and electricity usage every 10 seconds). Data stored in 1 minute intervals in InfluxDB cluster.</li>
+                <li>Owned, operated and developed Kafka + Akka powered ingestion pipeline for storing smart energy consumption data (700k devices reporting 30-min and 24-hour granularity data, batched from third party every day). Data stored in Cassandra cluster.</li>
+                <li>Architected and implemented pipeline for sharing anonymised smart meter usage data with a third party to collect disaggregated energy usage (e.g., what portion of energy went towards heating, lighting, entertainment devices).</li>
+                <li>Owned and developed customer facing frontend for viewing 1-minute, 30-minute and daily energy usage statistics, and comparison to previous usage.</li>
+                <li>Designed and developed new customer facing frontend for viewing categorised breakdown of energy usage.</li>
+                <li>Captured all existing infrastructure as code, and developed a small framework for verifying and deploying infrastructure changes to be used as part of our CI pipeline, allowing us to evolve to Continuous Delivery.</li>
+                <li>Helped teams bootstrap usage of GCP/GKE to make more efficient use of BigQuery for business insight services/tooling.</li>
+                <li>Led the creation of a cross-team task force to tackle inconsistencies in global Customer UX, resulting in the creation of a new team to specifically tackle this problem area, and create a global style guide to make it easier for teams to be consistent.</li>
+            </ul>
 
-            <p>Helped teams migrate into individual AWS accounts and automate the provisioning of infrastructure using TerraForm and AWS CloudFormation. I also led workshops on the effective operation of containerised JVM applications in multi-tenant computing scenarios.</p>
-
-            <p>Bootstrapped proof of concept work around an internal data lake, supporting the real-time ingestion of Kafka events (with Avro schemas) into BigQuery for use by other development teams, data science and business insight.</p>
-
-            <p>Involved in the formulation of a squad across multiple teams to address concerns with the overall customer experience, ultimately resulting in the creation of a new team whose remit was holistic oversight of the customer experience, and improved feedback from customers.</p>
-
-            <p>Collaborated to bootstrap internal data platform in Google Container Service, leveraging my experience with containerisation and automation to capitalise on the flexibility offered by Kubernetes easily.</p>
+            <h5>Tools &amp; Techs</h5>
+            <p>Scala, Akka (Streams, Kafka, HTTP), Kafka, Spark, InfluxDB, Cassandra, Grafana, Kapacitor, Angular, React, AWS (Compute, Storage, Messaging, Infrastructure), GCP (GKE, BigQuery), Docker/ECS/GKE, GoCD, Jenkins, Terraform/CloudFormation, Python (CI/CD library)</p>
         </div><!--//details-->
     </div><!--//item-->
+
+    <hr></hr>
 
     <div class="item">
         <div class="meta">
@@ -52,15 +69,24 @@
             <div class="company">BBC, MediaCityUK</div>
         </div><!--//meta-->
         <div class="details">
-            <p>Working under the Content Discovery group supporting the BBC Homepage, site-wide navigation, and BBC Online Search APIs (used by every BBC site/app including iPlayer Video/Radio).</p>
+            <p>Working under the Content Discovery as part of the BBC Online Search team, providing APIs and UIs for searching content produced across the entire BBC. The APIs and UIs supported every domestic BBC site/sub-site, iPlayer Video/Radio and newer mobile apps.</p>
 
-            <p>Lead on technology choices and implementation of a complete migration of the Search systems from an in-house commercial platform to an open source solution (Apache Solr) hosted in AWS. We worked closely with AWS to adopt best practices for architecting scalable and resilient systems in the cloud.</p>
+            <h5>Projects</h5>
+            <ul class="project-list">
+                <li>Architected and implemented year-long migration from commercial search-engine, hosted in house, to open source (Solr) hosted in AWS with zero downtime or change in functionality to consumers across the entire business.</li>
+                <li>Re-architected, designed and implemented new search, suggestion and recommendation UI to become part of the site-wide BBC header, establishing new team norms for frontend development using React.</li>
+                <li>Trained with AWS to become a self-reliant DevOps team, owning and operating the newly migrated Search systems. This empowered us to improve costs, resilience (more flexible and automated scaling), and business functionality (ability to quickly create new sub-indexes of search content for specific audiences).</li>
+                <li>Architected and implemented serverless pipeline for ingesting documents from any team in the BBC to be indexed in new search system. Kept existing API contracts in place but completely re-architected everything underneath, giving us flexibility to add new sources/destinations for indexed content, and practically unlimited scalability for bursty workloads.</li>
+                <li>As a 10% R&amp;D project, collaborated to create a "toolshed" project which used Docker/ECS to allow our team (and other teams in the same group) to rapidly deploy prototypes, proof-of-concepts or short-lived systems without the need to do heavyweight deployment of servers as had previously been the norm.</li>
+                <li>Collaborated with other teams in the group to develop an internal python framework to interface onto the BBC's federated cloud APIs to allow us to enable Continuous Deployment all the way to Prod from our Jenkins pipelines.</li>
+            </ul>
 
-            <p>Created a new AWS based pipeline for ingesting and indexing content from production and editorial teams around the BBC. Implemented using serverless principles (AWS lambda), providing high scalability and cost management. This pipeline allows new sources and destinations to be added with ease, and without any interruption of service. We worked with AWS to adopt best CD practices for the use of AWS lambda, and I also created a dockerised test harness for us to test the lambda locally.</p>
-
-            <p>As a 10% R&D project I collaborated to roll out a "toolshed" project which allowed us to rapidly develop prototypes in Docker containers and deploy them into the toolshed for evaluation, or other use cases (e.g., dashboards, prototype tools). I also worked across multiple projects to provide a Python library to help us create repeatable and portable deployment pipelines, and promoted the use of Jenkins pipelines.</p>
+            <h5>Tools &amp; Techs</h5>
+            <p>Java, Ruby, Spring, Camel, Rails, Cucumber, Solr, Elasticsearch, Exalead Cloudview (COTS search engine), AWS (Compute, Storage, Messaging, Infrastructure, Identity),Scala (sibling team's service), Python, Node (Express, React), Jenkins</p>
         </div><!--//details-->
     </div><!--//item-->
+
+    <hr></hr>
 
     <div class="item">
         <div class="meta">
@@ -76,6 +102,8 @@
                 <p>Began to introduce Docker and Vagrant into the projects to provide an automated mechanism for bootstrapping development environments which provided repeatable and portable deployments to improve testing, and also new team members to be on-boarded more effectively.</p>
         </div><!--//details-->
     </div><!--//item-->
+
+    <hr></hr>
 
     <div class="item">
         <div class="meta">
