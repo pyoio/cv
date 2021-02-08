@@ -4,20 +4,47 @@
     <div class="item">
         <div class="meta">
             <div class="upper-row">
+                <h3 class="job-title">Tech Lead</h3>
+                <div class="time">Aug 2019 - <i>Current</i></div>
+            </div><!--//upper-row-->
+            <div class="company">Lightbend, Remote (London)</div>
+        </div><!--//meta-->
+        <div class="details">
+            <p>Tech lead on the Lightbend commercial Telemetry product, providing instrumentation, metrics and tracing capabilities across Lightbends entire suite of frameworks (Akka, Streams, Lagom, Play, Console).</p>
+
+            <h5>Projects</h5>
+            <ul class="project-list">
+                <li>Specialist support and consulting for customers ranging from usage of the Telemetry product all the way up to architectural guidance on Monitoring and Observability journeys.</li>
+                <li>Continued development of the Telemetry product to broaden its tracing and metrics capabilities (e.g., adding trace context propagation via Akka Streams over Kafka, Akka gRPC and Akka HTTP/2).</li>
+                <li>Collaborated with product to integrate the Telemetry team into the wider Akka team's agile workflow and cycle and led on efforts to standardise our sprint-to-sprint activities.</li>
+                <li>Collaborated with new SaaS and Cloud Marketplace teams to help them setup SRE best practices from the get go (immutable infra-as-code, automation and Observability capabilities).</li>
+            </ul>
+
+            <h5>Tools &amp; Techs</h5>
+            <p>AWS (ECS, ECR), GCP (GKE, GCR), Azure (AKS), Kubernetes, Java, Scala, Jenkins, Prometheus, Grafana, Zipkin, Elasticsearch, Jaeger, Datadog</p>
+        </div><!--//details-->
+    </div><!--//item-->
+
+    <hr></hr>
+
+    <div class="item">
+        <div class="meta">
+            <div class="upper-row">
                 <h3 class="job-title">Site Reliability Engineer</h3>
-                <div class="time">2019 - <i>Current</i></div>
+                <div class="time">Jan 2019 - Jul 2019</div>
             </div><!--//upper-row-->
             <div class="company">Thought Machine, London</div>
         </div><!--//meta-->
         <div class="details">
-            <p>Site Reliability Engineer working on the Cloud team, developing tools to allow development teams to have access to a consistent set of Kubernetes, infrastructure and observability capabilities, regardless of the underlying cloud provider. The team also consults both internally on best practices and externally with clients where required.</p>
+            <p>Site Reliability Engineer working on the Cloud team, developing tools to allow development teams to have access to a consistent set of Kubernetes, infrastructure and observability capabilities, regardless of the underlying cloud provider. The team also consulted both internally on best practices and externally with clients where required.</p>
 
             <h5>Projects</h5>
             <ul class="project-list">
+                <li>Took lead responsibility over Monitoring squad for both internal capabilities and external support offered to customers.</li>
                 <li>Re-architecting monitoring infrastructure from top-to-bottom to better support scaling the number of metrics we were collecting into the tens-of-millions per pull.</li>
                 <li>Developing an opinionated observability (metrics, tracing, logging) package as a drop-in installation for customer clusters to enable us to support them in a consistent manner.</li>
                 <li>Adding automated tests to all CI/CD pipelines to ensure consistency and validity of Kubernetes objects helping all teams follow best practices and keep our stack observable.</li>
-                <li>Developing and educating on effective visualisations of high level overview dashboards for application and infrstructure level operations, particularly through the use of both USE and RED methodologies.</li>
+                <li>Developing and educating on effective visualisations and dashboards for application and infrstructure level operations.</li>
             </ul>
 
             <h5>Tools &amp; Techs</h5>
@@ -40,13 +67,12 @@
 
             <h5>Projects</h5>
             <ul class="project-list">
-                <li>Designed and implemented automated assignment of cloud-provider IAM roles to individual microservices, improving security by locking down service access to data stores and paving the way for subsequent work around service-to-service identity.</li>
-                <li>Designed and implemented service-to-service authentication and authorisation mechanism based on IAM identities (inspired by Vault's IAM auth implementation), allowing service owners to control fine-grained application-level permissions between services.</li>
+                <li>Designed and implemented microservice service identity assignment (based on Vault's IAM auth implementation), facilitating per microservice IAM policy assignment and inter-service authentication and authorisation mechanisms.</li>
                 <li>Re-architected AWS load balancing to make more efficient use of Application Load Balancers, improving deployment speeds, operational resilience and saving $13k per month.</li>
                 <li>Re-architected service migration allowing zero downtime transitions within the internal PaaS for wider sets of configuration changes.</li>
                 <li>Led a BuzzFeed tech-wide developer experience engagement exercise, testing a set of user personas and problem hypotheses to check we understood user needs, and collect targeted feedback about how to improve day-to-day development pain, and what long-term capabilities we needed to target.</li>
                 <li>Automating multiple aspects of the Terraform setup of new instances of the PaaS for better disaster recovery, increased automation and improved testing.</li>
-                <li>Designed new architecture to improve cluster isolation within PaaS, allowing clusters to be more easily deployed across multiple AWS accounts.</li>
+                <li>Evolved architecture to improve cluster isolation within PaaS, allowing clusters to be more easily deployed across multiple AWS accounts.</li>
             </ul>
 
             <h5>Tools &amp; Techs</h5>
@@ -69,14 +95,13 @@
 
             <h5>Projects</h5>
             <ul class="project-list">
-                <li>Owned, operated and developed Kafka + Akka powered ingestion pipeline for storing real-time energy consumption data (13k devices reporting gas and electricity usage every 10 seconds). Data stored in 1 minute intervals in InfluxDB cluster.</li>
-                <li>Owned, operated and developed Kafka + Akka powered ingestion pipeline for storing smart energy consumption data (700k devices reporting 30-min and 24-hour granularity data, batched from third party every day). Data stored in Cassandra cluster.</li>
+                <li>Owned, operated and developed Kafka + Akka powered ingestion pipeline for storing energy consumption data (13k devices reporting gas and electricity usage every 10 seconds, 700k devices reporting every 24-hour). Data stored in InfluxDB and Cassandra clusters.</li>
+                <li>Owned, operated and developed customer-facing frontend for viewing 1-minute, 30-minute and daily energy usage statistics, and comparison to their previous usage.</li>
                 <li>Architected and implemented a pipeline for sharing anonymised smart meter usage data with a third party to collect disaggregated energy usage (e.g., what portion of energy went towards heating, lighting, entertainment devices).</li>
-                <li>Owned and developed customer-facing frontend for viewing 1-minute, 30-minute and daily energy usage statistics, and comparison to their previous usage.</li>
                 <li>Designed and developed new customer-facing frontend for viewing a categorised breakdown of energy usage.</li>
                 <li>Captured all existing infrastructure as code, and developed a small framework for verifying and deploying infrastructure changes to be used as part of our CI pipeline, allowing us to evolve to Continuous Delivery.</li>
                 <li>Helped teams bootstrap usage of GCP/GKE to make more efficient use of BigQuery for business insight services/tooling.</li>
-                <li>Led the creation of a cross-team task force to tackle inconsistencies in global Customer UX, resulting in the creation of a new team to specifically tackle this problem area, and create a global style guide to make it easier for teams to be consistent.</li>
+                <li>Led the creation of a cross-team task force to tackle inconsistencies in company-wide Customer UX, resulting in the creation of a new team to specifically tackle this problem area, and create a global style guide to make it easier for teams to be consistent.</li>
             </ul>
 
             <h5>Tools &amp; Techs</h5>
